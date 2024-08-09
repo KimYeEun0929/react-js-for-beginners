@@ -1,0 +1,10 @@
+.movie-container {
+  display: flex; /* Flexbox 사용*/
+  flex-wrap: wrap; /* 줄 바꿈 허용*/
+  justify-content: space-between; /*공간을 균등하게 분배*/
+}
+
+.movie-container > * {
+  flex: 0 1 calc(50% - 10px); /* 각 영화의 너비를 50%로 설정 (여백 고려) */
+  margin-bottom: 20px;
+}
